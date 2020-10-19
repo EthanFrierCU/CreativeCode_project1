@@ -17,6 +17,6 @@ public class planeSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition = new Vector3((scriptRef.showIndex * scriptRef.gridSize)-(float).05, (float)-.116, (float).116);
+        transform.localPosition = new Vector3((scriptRef.showIndex * scriptRef.gridSize)-(float).05, (float).45, (float).45);
     }
 }
