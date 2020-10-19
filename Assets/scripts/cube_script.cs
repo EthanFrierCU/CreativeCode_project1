@@ -15,7 +15,7 @@ public class cube_script : MonoBehaviour {
 		for (int x = 0; x < cubeFidelity; x++) {
 			for (int y = 0; y < cubeFidelity; y++){ 
 				for (int z = 0; z < cubeFidelity; z++){
-					GameObject newCube = Instantiate(colorCubePrefab);
+					GameObject newCube = Instantiate(colorCubePrefab, this.transform);
 					newCube.transform.position = new Vector3(x * gridSize, y * gridSize, z * gridSize);
 					newCube.transform.localScale = new Vector3(gridSize * 0.9f, gridSize * 0.9f, gridSize * 0.9f);
 					newCube.GetComponent<Renderer>().material.SetColor("_Color", new Color(x / (float)cubeFidelity, y / (float)cubeFidelity,  z / (float)cubeFidelity, 1f));
